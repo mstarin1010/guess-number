@@ -1,0 +1,9 @@
+#!/usr/bin/env zsh
+r=$(( $RANDOM % 8 ))
+echo " I'm thinking of a number between 0 and 8 "
+vared -p "> " -c g
+if [[ $g -eq $r ]]; then;
+	echo " Congratulations $r is correct!"
+else;
+	echo " Sorry wrong number it was $r"
+fi
